@@ -18,14 +18,17 @@ public class bubblesortRecursion {
     }
 
     private static void sortArray(int[] arr, int n) {
+        //base case
         if(n==0||n==1){
             return;
         }
+        //condition solved one case
         for(int i=0; i<n-1; i++){
             if(arr[i]>arr[i+1]){
                 swap(arr,i,i+1);
             }
         }
+        //recursion other cases handled by recursion
         sortArray(arr,n-1);
     }
 
