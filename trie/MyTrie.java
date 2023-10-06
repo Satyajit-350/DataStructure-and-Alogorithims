@@ -107,6 +107,14 @@ public class MyTrie {
         node.remove("DOG");
 
         System.out.println(node.search("DOG"));
+
+
+        /**
+         * Time Complexity
+         * Insertion:  O(l)    l = lenght of the String word
+         * Deletion: O(l)
+         * Searching: O(l)
+         */
         
     }
 
