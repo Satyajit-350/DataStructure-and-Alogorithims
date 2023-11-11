@@ -39,7 +39,7 @@ public class print_lcs {
         int j= m;
         StringBuilder sb = new StringBuilder();
         while(i>0 && j>0){
-            if(dp[i]==dp[j]){
+            if(s.charAt(i-1)==t.charAt(j-1)){
                 //match case
                 sb.append(s.charAt(i-1));
                 i--;
