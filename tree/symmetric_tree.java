@@ -2,17 +2,19 @@ package tree;
 
 import java.util.*;
 
-class Node{
-    int data;
-    Node left,right;
-    Node(int data){
-        this.data = data;
-        left=null;
-        right=null;
-    }
-}
+
 
 public class symmetric_tree {
+
+    static class Node{
+        int data;
+        Node left,right;
+        Node(int data){
+            this.data = data;
+            left=null;
+            right=null;
+        }
+    }
 
     public static Node buildTree(String str){
         
